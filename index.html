@@ -8,8 +8,44 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwindcss cdn--- -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 95% !important;
+            margin: 0 auto;
+        }
+    </style>
 </head>
-<body>
-    
+<body class="hind-madurai">
+   
+    <!-- topbar-------- -->
+    <div class="topbar w-full py-3">
+        <div class="wrapper flex justify-between">
+            <div class="left flex items-center">
+                <img class="h-[38px]" src="./assets/logo.png" alt="logo">
+                <h1 class="inter text-[#006747] font-extrabold text-base/5 mx-2">Emergency <br> Service</h1>
+            </div>
+            <div class="right flex items-center gap-3">
+                <div class="capsule badge bg-[#ECFFF0] h-[38px] w-[95px] rounded-3xl text-black">
+                    <span class="font-bold">0</span><img class="h-[20px]" src="./assets/heart.png" alt="coin">
+                </div>
+                <div class="capsule badge bg-[#ECFFF0] h-[38px] w-[95px] rounded-3xl text-black">
+                    <span class="font-bold">100</span><img class="h-[20px]" src="./assets/coin.png" alt="">
+                </div>
+                <div class="badge  bg-[#00A63E] h-[38px] w-[95px] rounded-3xl text-white">2 Copy</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- banner-------- -->
+    <div class="banner w-full h-[200px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center py-3">
+        <img class="w-[70px] my-3" src="./assets/logo-dark.png" alt="logo">
+        <h2 class="text-3xl font-bold text-white">Emergency Service Directory</h2>
+        <p class="text-white my-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+
 </body>
 </html>
