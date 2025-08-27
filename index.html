@@ -28,7 +28,7 @@
         <div class="wrapper flex justify-between">
             <div class="left flex items-center">
                 <img class="h-[38px]" src="./assets/logo.png" alt="logo">
-                <h1 class="inter text-[#006747] font-extrabold text-base/5 mx-2">Emergency <br> Service</h1>
+                <h1 class="hidden md:block inter text-[#006747] font-extrabold text-base/5 mx-2">Emergency <br> Service</h1>
             </div>
             <div class="right flex items-center gap-3">
                 <div class="capsule badge bg-[#ECFFF0] h-[38px] w-[95px] rounded-3xl text-black">
@@ -43,20 +43,20 @@
     </div>
 
     <!-- banner-------- -->
-    <div class="banner w-full h-[200px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center py-3">
+    <div class="banner px-1 w-full h-[200px] bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] flex flex-col items-center py-3">
         <img class="w-[70px] my-3" src="./assets/logo-dark.png" alt="logo">
         <h2 class="text-3xl font-bold text-white">Emergency Service Directory</h2>
-        <p class="text-white my-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+        <p class="text-white text-center my-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
     </div>
 
     <!-- main section--- -->
     <div class="main min-h-screen bg-[#F5FFF6] pb-5">
         <div class="wrapper py-8">
 
-            <div class="layout grid grid-cols-12 gap-5">
+            <div class="layout grid grid-cols-1 lg:grid-cols-12 gap-5">
 
                 <!-- left card holder section -->
-                <div class="card_holder grid grid-cols-3 gap-5 bg-[#F5FFF6] col-span-9 min-h-5" >
+                <div class="card_holder grid grid-cols-1 lg:grid-cols-3 gap-5 bg-[#F5FFF6] lg:col-span-9 min-h-5" >
 
                     <!-- card1 -->
                     <div class="card bg-white p-5 shadow-md">
@@ -190,12 +190,10 @@
                         </div>
                     </div>
                     
-                    
-                    
                 </div>
 
                 <!-- right history section -->
-                <div class="history bg-white col-span-3 min-h-5 rounded-lg shadow-md p-4" >
+                <div class="history bg-white lg:col-span-3 min-h-5 rounded-lg shadow-md p-4" >
                     <div class="history_head flex justify-between items-center">
                         <h3 class="inter font-semibold text-sm"><i class="fa-regular fa-clock"></i> Call History</h3>
                         <button class="btn inter w-[80px] bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-2xl text-white text-xs font-light shadow-none h-[35px]">Clear</button>
