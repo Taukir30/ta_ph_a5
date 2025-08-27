@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <!-- tailwindcss cdn--- -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawsome cdn---- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <style>
         *{
@@ -45,6 +47,175 @@
         <img class="w-[70px] my-3" src="./assets/logo-dark.png" alt="logo">
         <h2 class="text-3xl font-bold text-white">Emergency Service Directory</h2>
         <p class="text-white my-3">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+    </div>
+
+    <!-- main section--- -->
+    <div class="main min-h-screen bg-[#F5FFF6] pb-5">
+        <div class="wrapper py-8">
+
+            <div class="layout grid grid-cols-12 gap-5">
+
+                <!-- left card holder section -->
+                <div class="card_holder grid grid-cols-3 gap-5 bg-[#F5FFF6] col-span-9 min-h-5" >
+
+                    <!-- card1 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-red-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">National Emergency Number</h2>
+                            <p class="text-xs text-gray-600">National Emergency</p>
+                            <span class="font-bold text-2xl mt-4">999</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">All</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <!-- card2 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-blue-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/police.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">Police Helpline Number</h2>
+                            <p class="text-xs text-gray-600">Police</p>
+                            <span class="font-bold text-2xl mt-4">999</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Police</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-red-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/fire-service.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">Fire Service Number</h2>
+                            <p class="text-xs text-gray-600">Fire Service</p>
+                            <span class="font-bold text-2xl mt-4">999</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Fire</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <!-- card4 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-red-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/ambulance.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">Ambulance Service</h2>
+                            <p class="text-xs text-gray-600">Ambulance</p>
+                            <span class="font-bold text-2xl mt-4">1994-999999</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Health</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <!-- card5 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-red-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">Women & Child Helpline</h2>
+                            <p class="text-xs text-gray-600">Women & Child Helpline</p>
+                            <span class="font-bold text-2xl mt-4">109</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Help</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+
+                    <!-- card6 -->
+                    <div class="card bg-white p-5 shadow-md">
+                        <div class="card_top flex justify-between items-center">
+                            <div class="image h-[40px] w-[40px] bg-red-100 rounded-xl flex justify-center items-center">
+                                <img class="w-[20px]" src="./assets/emergency.png" alt="">
+                            </div>
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="card_text flex flex-col">
+                            <h2 class="font-bold text-base mt-3">Anti-Corruption Helpline</h2>
+                            <p class="text-xs text-gray-600">Anti-Corruption</p>
+                            <span class="font-bold text-2xl mt-4">106</span>
+                            <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Govt.</div>
+                        </div>
+
+                        <div class="card_button grid grid-cols-2 gap-2 mt-5">
+                            <button class="btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
+                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                <!-- right history section -->
+                <div class="history bg-white col-span-3 min-h-5 rounded-lg shadow-md p-4" >
+                    <div class="history_head flex justify-between items-center">
+                        <h3 class="inter font-semibold text-sm"><i class="fa-regular fa-clock"></i> Call History</h3>
+                        <button class="btn inter w-[80px] bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-2xl text-white text-xs font-light shadow-none h-[35px]">Clear</button>
+                    </div>
+                    <div class="history_body my-3">
+
+                        <div class="tile bg-[#FAFAFA] rounded-md p-2 shadow-md flex justify-between items-center">
+                            <div class="left">
+                                <h4 class="inter font-semibold text-xs">Fire Service Number</h4>
+                                <p class="text-xs text-gray-500 my-1">999</p>
+                            </div>
+                            <span class="text-xs">11:36:58 AM</span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
 </body>
