@@ -43,7 +43,7 @@
                     <span id="like_counter" class="font-bold">0</span><img class="h-[20px]" src="./assets/heart.png" alt="coin">
                 </div>
                 <div class="capsule badge bg-[#ECFFF0] h-[38px] w-[95px] rounded-3xl text-black">
-                    <span class="font-bold">100</span><img class="h-[20px]" src="./assets/coin.png" alt="">
+                    <span id="coins" class="font-bold">100</span><img class="h-[20px]" src="./assets/coin.png" alt="">
                 </div>
                 <div class="badge  bg-[#00A63E] h-[38px] w-[95px] rounded-3xl text-white"><span id="copy_counter">0</span> Copy</div>
             </div>
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">National Emergency Number</h2>
+                            <h2 id="service_name1" class="font-bold text-base mt-3">National Emergency Number</h2>
                             <p class="text-xs text-gray-600">National Emergency</p>
                             <span id="hot_line1" class="hot_line font-bold text-2xl mt-4">999</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">All</div>
@@ -84,7 +84,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn1" onclick='copyToClipboard("hot_line1")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name1","hot_line1")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -98,7 +98,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">Police Helpline Number</h2>
+                            <h2 id="service_name2" class="font-bold text-base mt-3">Police Helpline Number</h2>
                             <p class="text-xs text-gray-600">Police</p>
                             <span id="hot_line2" class="hot_line font-bold text-2xl mt-4">999</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Police</div>
@@ -106,7 +106,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn2" onclick='copyToClipboard("hot_line2")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name2","hot_line2")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -120,7 +120,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">Fire Service Number</h2>
+                            <h2 id="service_name3" class="font-bold text-base mt-3">Fire Service Number</h2>
                             <p class="text-xs text-gray-600">Fire Service</p>
                             <span id="hot_line3" class="hot_line font-bold text-2xl mt-4">999</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Fire</div>
@@ -128,7 +128,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn3" onclick='copyToClipboard("hot_line3")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name3","hot_line3")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -142,7 +142,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">Ambulance Service</h2>
+                            <h2 id="service_name4" class="font-bold text-base mt-3">Ambulance Service</h2>
                             <p class="text-xs text-gray-600">Ambulance</p>
                             <span id="hot_line4" class="hot_line font-bold text-2xl mt-4">1994-999999</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Health</div>
@@ -150,7 +150,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn4" onclick='copyToClipboard("hot_line4")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name4","hot_line4")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -164,7 +164,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">Women & Child Helpline</h2>
+                            <h2 id="service_name5" class="font-bold text-base mt-3">Women & Child Helpline</h2>
                             <p class="text-xs text-gray-600">Women & Child Helpline</p>
                             <span id="hot_line5" class="hot_line font-bold text-2xl mt-4">109</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Help</div>
@@ -172,7 +172,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn5" onclick='copyToClipboard("hot_line5")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name5","hot_line5")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
 
@@ -186,7 +186,7 @@
                         </div>
 
                         <div class="card_text flex flex-col">
-                            <h2 class="font-bold text-base mt-3">Anti-Corruption Helpline</h2>
+                            <h2 id="service_name6" class="font-bold text-base mt-3">Anti-Corruption Helpline</h2>
                             <p class="text-xs text-gray-600">Anti-Corruption</p>
                             <span id="hot_line6" class="hot_line font-bold text-2xl mt-4">106</span>
                             <div class="badge bg-gray-200 rounded-xl h-[25px] text-xs text-gray-600 inter">Govt.</div>
@@ -194,7 +194,7 @@
 
                         <div class="card_button grid grid-cols-2 gap-2 mt-5">
                             <button id="copy_btn6" onclick='copyToClipboard("hot_line6")' class="copy_btn btn inter bg-white hover:bg-gray-200 hover:cursor-pointer border-gray-300 rounded-md text-gray-600 text-xs font-light shadow-none h-[30px]"><i class="fa-regular fa-copy"></i>Copy</button>
-                            <button class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
+                            <button onclick='makeCall("service_name6","hot_line6")' class="btn inter bg-green-600 hover:bg-green-700 hover:cursor-pointer border-green-600 rounded-md text-white text-xs font-light shadow-none h-[30px]"><i class="fa-solid fa-phone"></i>Call</button>
                         </div>
                     </div>
                     
